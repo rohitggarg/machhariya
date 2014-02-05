@@ -2,6 +2,7 @@ machhariya
 ==========
 
 Something fishy in bhojpuri!
+Thinking about creating an elasticsearch adapter for Ember.js...
 
 [![Gitter chat](https://badges.gitter.im/rohitggarg/machhariya.png)](https://gitter.im/rohitggarg/machhariya)
 
