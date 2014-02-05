@@ -3,7 +3,7 @@ machhariya
 
 Something fishy in bhojpuri!
 
-We are on gitter : [![Gitter chat](https://badges.gitter.im/rohitggarg/machhariya.png)](https://gitter.im/rohitggarg/machhariya)
+[![Gitter chat](https://badges.gitter.im/rohitggarg/machhariya.png)](https://gitter.im/rohitggarg/machhariya)
 
 Topics
 * http://www.youtube.com/watch?v=_2b0EehD5uY More context!!
