@@ -4,6 +4,8 @@ machhariya
 Something fishy in bhojpuri!
 Thinking about creating an elasticsearch adapter for Ember.js...
 
+-> https://github.com/karmi/ember-data-elasticsearch already present, 1 year old. Need to check if that works with latest ember.js
+
 [![Gitter chat](https://badges.gitter.im/rohitggarg/machhariya.png)](https://gitter.im/rohitggarg/machhariya)
 
 Topics
