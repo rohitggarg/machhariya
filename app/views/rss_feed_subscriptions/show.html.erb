@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @rss_feed_subscription.user_id %>
+</p>
+
+<p>
+  <strong>Rss feed:</strong>
+  <%= @rss_feed_subscription.rss_feed_id %>
+</p>
+
+<%= link_to 'Edit', edit_rss_feed_subscription_path(@rss_feed_subscription) %> |
+<%= link_to 'Back', rss_feed_subscriptions_path %>

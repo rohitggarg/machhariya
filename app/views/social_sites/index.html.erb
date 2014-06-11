@@ -1,0 +1,33 @@
+<h1>Listing social_sites</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Api token</th>
+      <th>User identifier</th>
+      <th>User</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @social_sites.each do |social_site| %>
+      <tr>
+        <td><%= social_site.name %></td>
+        <td><%= social_site.api_token %></td>
+        <td><%= social_site.user_identifier %></td>
+        <td><%= social_site.user_id %></td>
+        <td><%= link_to 'Show', social_site %></td>
+        <td><%= link_to 'Edit', edit_social_site_path(social_site) %></td>
+        <td><%= link_to 'Destroy', social_site, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Social site', new_social_site_path %>
