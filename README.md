@@ -10,10 +10,12 @@ For realtime updates
 Facebook
 https://developers.facebook.com/docs/graph-api/real-time-updates/v2.0
 https://github.com/arsduo/koala/blob/master/lib/koala/realtime_updates.rb
+App created by the name of Paani
 
 Twitter
 https://dev.twitter.com/docs/api/streaming
 https://github.com/sferik/twitter
+App created by the name of Paani
 
 -------------------------------------------------------------------------
 
