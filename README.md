@@ -13,6 +13,7 @@ https://github.com/arsduo/koala/blob/master/lib/koala/realtime_updates.rb
 
 Twitter
 https://dev.twitter.com/docs/api/streaming
+https://github.com/sferik/twitter
 
 -------------------------------------------------------------------------
 
