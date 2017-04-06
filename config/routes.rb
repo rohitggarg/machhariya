@@ -7,7 +7,7 @@ Machhariya::Application.routes.draw do
 
   resources :users
 
-  root to: 'welcome#index'
+  root to: 'users#index'
   get '/auth/twitter/callback', to: 'logins#create', as: 'callback'
   get '/auth/twitter/failure', to: 'logins#error', as: 'failure'
   get '/twitter/profile', to: 'logins#show', as: 'show'

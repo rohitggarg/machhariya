@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails'
+gem 'sass-rails'
 gem 'json' 
 gem 'sqlite3'
 gem 'pushmeup'
