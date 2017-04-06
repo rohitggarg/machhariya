@@ -1,4 +1,4 @@
-class RelaysController < ApplicationController
+class FacebooksController < ApplicationController
   def index
     if session['access_token']
       @face='You are logged in! <a href="facebooks/logout">Logout</a>'

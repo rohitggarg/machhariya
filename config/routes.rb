@@ -18,5 +18,4 @@ Machhariya::Application.routes.draw do
   get 'facebooks/logout'
   get 'facebooks/callback'
   get 'facebooks/menu'
-  root :to => "facebooks#index"
 end
