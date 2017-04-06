@@ -13,10 +13,10 @@ Machhariya::Application.routes.draw do
   get '/twitter/profile', to: 'logins#show', as: 'show'
   delete '/twitter/signout', to: 'logins#destroy', as: 'signout'
 
-  match 'facebooks/index'
-  match 'facebooks/login'
-  match 'facebooks/logout'
-  match 'facebooks/callback'
-  match 'facebooks/menu'
+  get 'facebooks/index'
+  get 'facebooks/login'
+  get 'facebooks/logout'
+  get 'facebooks/callback'
+  get 'facebooks/menu'
   root :to => "facebooks#index"
 end

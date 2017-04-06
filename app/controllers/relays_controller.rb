@@ -16,7 +16,7 @@ class RelaysController < ApplicationController
 
   def login
   # generate a new oauth object with your app data and your callback url
-    session['oauth'] = Koala::Facebook::OAuth.new(Settings.first.facebook_app_id, Settings.first.facebook_app_secret, Machhariya::Application.config.site_url + 'facebooks/callback')
+    session['oauth'] = Koala::Facebook::OAuth.new(ENV['FACEBOOK_APP_ID'], ENV['FACEBOOK_APP_SECRET'], Machhariya::Application.config.site_url + 'facebooks/callback')
     #Koala::Facebook::OAuth.new(oauth_callback_url).
 
     # redirect to facebook to get your code
