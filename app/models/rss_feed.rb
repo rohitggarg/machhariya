@@ -1,3 +1,3 @@
-class RssFeed < ActiveRecord::Base
+class RssFeed < ApplicationRecord
   has_many :users, through: RssFeedSubscription
 end
