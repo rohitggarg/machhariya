@@ -1,20 +1,15 @@
 source 'https://rubygems.org'
-ruby '2.4.1'
+
 gem 'rails'
 gem 'sass-rails'
-gem 'json' 
+gem 'json'
 gem 'sqlite3'
 gem 'pushmeup'
 gem 'jbuilder'
-gem 'koala'
 gem 'omniauth'
 gem 'omniauth-twitter'
-gem 'twitter'
-gem 'twitter-text'
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-group :doc do
-  gem 'sdoc', require: false
-end
+gem 'omniauth-facebook'
+
 group :development, :test do
   gem 'byebug', platform: :mri
 end

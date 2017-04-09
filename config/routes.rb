@@ -8,14 +8,10 @@ Machhariya::Application.routes.draw do
   resources :users
 
   root to: 'users#index'
-  get '/auth/twitter/callback', to: 'logins#create', as: 'callback'
-  get '/auth/twitter/failure', to: 'logins#error', as: 'failure'
-  get '/twitter/profile', to: 'logins#show', as: 'show'
-  delete '/twitter/signout', to: 'logins#destroy', as: 'signout'
 
-  get 'facebooks/index'
-  get 'facebooks/login'
-  get 'facebooks/logout'
-  get 'facebooks/callback'
-  get 'facebooks/menu'
+  get '/auth/:provider/callback' => 'logins#create'
+  get '/signin/:provider' => 'logins#new', :as => :signin
+  get '/signout' => 'logins#destroy', :as => :signout
+  get '/auth/failure' => 'logins#failure'
+  get '/details' => 'logins#show'
 end
