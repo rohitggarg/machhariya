@@ -7,15 +7,6 @@ class ApplicationController < ActionController::Base
   helper_method :user_signed_in?
   helper_method :correct_user?
 
-  def client
-    @client ||= Twitter::REST::Client.new do |config|
-      config.consumer_key = ENV['CONSUMER_KEY']
-      config.consumer_secret = ENV['CONSUMER_SECRET']
-      config.access_token = session['access_token']
-      config.access_token_secret = session['access_token_secret']
-    end
-  end
-
   private
     def current_user
       (@current_user ||= User.find(session[:user_id]) if session[:user_id]) rescue nil

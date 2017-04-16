@@ -9,6 +9,7 @@ gem 'jbuilder'
 gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'omniauth-facebook'
+gem 'koala'
 
 group :development, :test do
   gem 'byebug', platform: :mri

@@ -3,15 +3,16 @@ Machhariya::Application.routes.draw do
 
   resources :rss_feeds
 
-  resources :social_sites
+  resources :social_sites, except: [:edit, :create, :new]
 
   resources :users
 
-  root to: 'users#index'
+  root to: 'logins#index'
 
+  get '/logins' => 'logins#index'
+  
   get '/auth/:provider/callback' => 'logins#create'
   get '/signin/:provider' => 'logins#new', :as => :signin
   get '/signout' => 'logins#destroy', :as => :signout
   get '/auth/failure' => 'logins#failure'
-  get '/details' => 'logins#show'
 end

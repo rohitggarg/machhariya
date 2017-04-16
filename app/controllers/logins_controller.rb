@@ -1,5 +1,7 @@
 class LoginsController < ApplicationController
-  before_filter :authenticate_user!, only: [:show]
+  def index
+  end
+  
   def new
     redirect_to "/auth/#{params[:provider]}"
   end
@@ -24,7 +26,4 @@ class LoginsController < ApplicationController
     redirect_to root_url, :alert => "Authentication error: #{params[:message].humanize}"
   end
 
-  def show
-    render json: current_user
-  end
 end

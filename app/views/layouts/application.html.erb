@@ -6,7 +6,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<p><%= flash[:notice] %><span style='color: red'><%= flash[:error] %></span></p>
+<p><%= flash[:notice] %><span style='color: red'><%= flash[:error] %></span><span style='color: orange'><%= flash[:alert] %></span></p>
 <%= yield %>
 
 </body>

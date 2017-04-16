@@ -21,7 +21,6 @@
         <td><%= social_site.user_identifier %></td>
         <td><%= social_site.user_id %></td>
         <td><%= link_to 'Show', social_site %></td>
-        <td><%= link_to 'Edit', edit_social_site_path(social_site) %></td>
         <td><%= link_to 'Destroy', social_site, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
@@ -30,4 +29,3 @@
 
 <br>
 
-<%= link_to 'New Social site', new_social_site_path %>
