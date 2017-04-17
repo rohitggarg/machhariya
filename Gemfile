@@ -13,6 +13,7 @@ gem 'koala'
 
 group :development, :test do
   gem 'byebug', platform: :mri
+  gem 'rails-controller-testing'
 end
 group :development do
   gem 'web-console'

@@ -1,13 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  api_token: MyString
-  user_identifier: MyString
-  user_id: 1
-
-two:
-  name: MyString
-  api_token: MyString
-  user_identifier: MyString
+  name: facebook
+  api_token: aebf341acb34fde3d567091293acdb
+  user_identifier: 19823789127398
   user_id: 1

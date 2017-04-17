@@ -3,9 +3,9 @@ Machhariya::Application.routes.draw do
 
   resources :rss_feeds
 
-  resources :social_sites, except: [:edit, :create, :new]
+  resources :social_sites, only: [:index, :show, :destroy]
 
-  resources :users
+  resources :users, except: [:create, :new]
 
   root to: 'logins#index'
 

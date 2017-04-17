@@ -1,11 +1,6 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  gcm_key: MyString
-  apns_key: MyString
-
-two:
-  name: MyString
-  gcm_key: MyString
-  apns_key: MyString
+  name: John Smith
+  gcm_key: abcde1234
+  apns_key: FFDE-DDDD-AAAA-BBBB-CCCC

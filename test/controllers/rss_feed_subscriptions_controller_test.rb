@@ -18,30 +18,30 @@ class RssFeedSubscriptionsControllerTest < ActionController::TestCase
 
   test "should create rss_feed_subscription" do
     assert_difference('RssFeedSubscription.count') do
-      post :create, rss_feed_subscription: { rss_feed_id: @rss_feed_subscription.rss_feed_id, user_id: @rss_feed_subscription.user_id }
+      post :create, params: {rss_feed_subscription: { rss_feed_id: @rss_feed_subscription.rss_feed_id, user_id: @rss_feed_subscription.user_id } }
     end
 
     assert_redirected_to rss_feed_subscription_path(assigns(:rss_feed_subscription))
   end
 
   test "should show rss_feed_subscription" do
-    get :show, id: @rss_feed_subscription
+    get :show, params: {id: @rss_feed_subscription}
     assert_response :success
   end
 
   test "should get edit" do
-    get :edit, id: @rss_feed_subscription
+    get :edit, params: {id: @rss_feed_subscription}
     assert_response :success
   end
 
   test "should update rss_feed_subscription" do
-    patch :update, id: @rss_feed_subscription, rss_feed_subscription: { rss_feed_id: @rss_feed_subscription.rss_feed_id, user_id: @rss_feed_subscription.user_id }
+    patch :update, params: {id: @rss_feed_subscription, rss_feed_subscription: { rss_feed_id: @rss_feed_subscription.rss_feed_id, user_id: @rss_feed_subscription.user_id }}
     assert_redirected_to rss_feed_subscription_path(assigns(:rss_feed_subscription))
   end
 
   test "should destroy rss_feed_subscription" do
     assert_difference('RssFeedSubscription.count', -1) do
-      delete :destroy, id: @rss_feed_subscription
+      delete :destroy, params: {id: @rss_feed_subscription}
     end
 
     assert_redirected_to rss_feed_subscriptions_path
